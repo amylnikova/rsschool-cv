@@ -1,1 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#rsschool-logo {
+    width: 100px;
+}
