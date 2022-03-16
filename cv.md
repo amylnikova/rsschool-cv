@@ -31,6 +31,8 @@ Now my goal is to study the new area of knowledge as deeply as possible and beco
 * HTML5, CSS3
 * JavaScript ES6
 * Git, GitHub
+* Figma
+* Bootstrap
 * Handlebars Template engine
 
 ### Soft skills
