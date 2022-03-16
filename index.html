@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="assets/images/cv-avatar.JPG" alt="avatar">
         <h1>Anastasiia Mylnikova</h1>
         <h2>Junior Frontend Developer</h2>
     </header>
@@ -23,15 +24,121 @@
     </nav>
     <main>
         <div class="left-col">
-            <section id="contacts"></section>
-            <section id="languages"></section>
+            <section id="contacts">
+                <ul>
+                    <li><a href="mailto:nmylnikova44@gmail.com">nmylnikova44@gmail.com</a></li>
+                    <li><a href="tel:+380930517816">+38(093)-051-78-16</a></li>
+                    <li><span>@Mylnikova_A</span></li>
+                    <li><a href="https://www.linkedin.com/in/anastasiia-mylnikova-3a2ab8205/" target="_blank">LinkedIn</a></li>
+                    <li><span>Kyiv, Ukraine</span></li>
+                </ul>
+            </section>
+            <section id="languages">
+                <h3>Languages</h3>
+           <div class="lang-wrapper">
+                <div class="lang">
+                    <span>Ukrainian</span>
+                    <br>
+                    <span>Russian</span>
+                    <br>
+                    <span>English</span>
+                    <br>
+                    <span>Deutsch</span>
+                    <br>
+                </div>
+                <div class="level">
+                    <span>Native</span>
+                    <br>
+                    <span>Native</span>
+                    <br>
+                    <span>B2(Intermediate)</span>
+                    <br>
+                    <span>A1</span>
+                    <br>
+                </div>
+            </div>  
+            </section>
         </div>
         <div class="right-col">
-            <section id="about"></section>
-            <section id="education"></section>
-            <section id="skills"></section>
-            <section id="code"></section>
-            <section id="projects"></section>
+            <section id="about">
+                <h2>About myself</h2>
+                <p>I'm a beginner front-end developer. Finished the first stage of my studies at the Ucode IT Academy, currently keep studying this area.</p>
+                <p>I worked freelance makeup artist for more than 5 years before on various projects for cinema, advertising, and others, and gained priceless experience. Now I want this experience to be useful for realizing myself through a new field of work.</p>
+                <p>Aspire to grow fast into a qualified specialist.</p>
+            </section>
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+            <ul>
+                <li>University:
+                    <ul>
+                        <li>Kyiv National University of trade and economics
+                            <br><span class="semitransparent">Manager of foreign economic activity, master degree</span>
+                        </li>
+                    </ul>
+                </li>
+                <li>Courses:
+                    <ul>
+                        <li><a href="https://raw.githubusercontent.com/amylnikova/assets/main/ucode-certification.png" target="_blank" class="edu-link">Ucode IT Academy, Fullstack developer 1st stage</a></li>
+                        <li><a href="https://www.udemy.com/course/javascript_full/" target="_blank" class="edu-link">Udemy JS Basics course (in progress)</a></li>
+                        <li><a href="https://www.freecodecamp.org" target="_blank" class="edu-link">freeCodeCamp</a>
+                            <br>
+                            <a href="https://www.freecodecamp.org/certification/amylnikova/responsive-web-design" target="_blank" class="semitransparent edu-link">Responsive Web Design</a>
+                            <br>
+                            <a href="https://www.freecodecamp.org/certification/amylnikova/javascript-algorithms-and-data-structures" target="_blank" class="semitransparent edu-link">JavaScript Algorithms and Data Structures</a>
+                        </li>
+                        <li><a href="https://rs.school/js/" target="_blank" class="edu-link">Rolling Scopes school, JavaScript/Frontend course (in progress)</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+            </section>
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+            <ul>
+                <li class="first-level-list">HTML5</li>
+                <li class="first-level-list">CSS3
+                    <ul>
+                        <li>Adaptive design</li>
+                        <li>Responsive design</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                    </ul>
+                </li>
+                <li>JavaScript
+                    <ul>
+                        <li>Basics</li>
+                        <li>DOM</li>
+                        <li>ES6</li>
+                        <li>Asynchronous JavaScript</li>
+                    </ul>
+                </li>
+                <li class="first-level-list">Frameworks
+                    <ul>
+                        <li>Bootstrap</li>
+                    </ul>
+                </li>
+                <li class="first-level-list">Git, GitHub</li>
+                <li class="first-level-list">WordPress</li>
+                <li class="first-level-list">Figma</li>
+            </ul>
+            </section>
+            <section id="code">
+                <h2 class="section-title">Code example</h2>
+                <h3>Square Every Digit KATA from Codewars</h3>
+                <code>
+                    function squareDigits(num){
+                        let arr =num.toString().split('').map(num => {
+                          let n = parseInt(num);
+                          return n * n;
+                        })
+                        return parseInt(arr.join(''));
+                      }
+                </code>
+            </section>
+            <section id="projects">
+                <h3>Weather forecast</h3>
+                <h3>Image slider</h3>
+            </section>
         </div>
     </main>
     <footer>
