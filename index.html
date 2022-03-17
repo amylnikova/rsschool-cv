@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9d0f8243d6.js" crossorigin="anonymous"></script>
     <title>rsschool-cv</title>
@@ -15,8 +15,10 @@
     <div id="container">
         <header>
             <img src="assets/images/cv-avatar.JPG" alt="avatar">
-            <h1>Anastasiia Mylnikova</h1>
-            <h2>Junior Frontend Developer</h2>
+            <div class="naming">
+                <h1>Anastasiia Mylnikova</h1>
+                <h2>Junior Frontend Developer</h2>
+            </div>
         </header>
         <nav>
             <ul>
@@ -31,6 +33,7 @@
         <main>
             <div class="left-col">
                 <section id="contacts">
+                    <h3>Contacts</h3>
                     <ul>
                         <li><a href="mailto:nmylnikova44@gmail.com"><i class="fa-solid fa-square-envelope contact-icon"></i>nmylnikova44@gmail.com</a></li>
                         <li><a href="tel:+380930517816"><i class="fa-solid fa-square-phone contact-icon"></i>+38(093)-051-78-16</a></li>
@@ -41,33 +44,33 @@
                 </section>
                 <section id="languages">
                     <h3>Languages</h3>
-            <div class="lang-wrapper">
-                    <div class="lang">
-                        <span>Ukrainian</span>
-                        <br>
-                        <span>Russian</span>
-                        <br>
-                        <span>English</span>
-                        <br>
-                        <span>Deutsch</span>
-                        <br>
-                    </div>
-                    <div class="level">
-                        <span>Native</span>
-                        <br>
-                        <span>Native</span>
-                        <br>
-                        <span>B2(Intermediate)</span>
-                        <br>
-                        <span>A1</span>
-                        <br>
-                    </div>
-                </div>  
+                    <div class="lang-wrapper">
+                            <div class="lang">
+                                <span>Ukrainian</span>
+                                <br>
+                                <span>Russian</span>
+                                <br>
+                                <span>English</span>
+                                <br>
+                                <span>Deutsch</span>
+                                <br>
+                            </div>
+                            <div class="level">
+                                <span>Native</span>
+                                <br>
+                                <span>Native</span>
+                                <br>
+                                <span>B2(Intermediate)</span>
+                                <br>
+                                <span>A1</span>
+                                <br>
+                            </div>
+                        </div>  
                 </section>
             </div>
             <div class="right-col">
                 <section id="about">
-                    <h2>About myself</h2>
+                    <h2 class="section-title">About myself</h2>
                     <p>I'm a beginner front-end developer. Finished the first stage of my studies at the Ucode IT Academy, currently keep studying this area.</p>
                     <p>I worked freelance makeup artist for more than 5 years before on various projects for cinema, advertising, and others, and gained priceless experience. Now I want this experience to be useful for realizing myself through a new field of work.</p>
                     <p>Aspire to grow fast into a qualified specialist.</p>
@@ -131,19 +134,35 @@
                 <section id="code">
                     <h2 class="section-title">Code example</h2>
                     <h3>Square Every Digit KATA from Codewars</h3>
-                    <code>
-                        function squareDigits(num){<br>
-                            let arr =num.toString().split('').map(num => {<br>
-                            let n = parseInt(num);<br>
-                            return n * n;<br>
-                            })<br>
-                            return parseInt(arr.join(''));<br>
-                        }
-                    </code>
+                    <div class="code">
+                        <code>
+                            function squareDigits(num){<br>
+                                let arr = num.toString().split('').map(num => {<br>
+                                let n = parseInt(num);<br>
+                                return n * n;<br>
+                                })<br>
+                                return parseInt(arr.join(''));<br>
+                            }
+                        </code>
+                    </div>
                 </section>
                 <section id="projects">
-                    <h3>Weather forecast</h3>
-                    <h3>Image slider</h3>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-container">
+                        <div class="project-container">
+                            <a href="https://weather-forecast-for-7-days.netlify.app/" target="_blank">
+                                <h3>Weather forecast</h3>
+                                <img src="assets/images/weather-forecast.png" alt="weather-forecast" class="project-img">
+                            </a>
+                            
+                        </div>
+                        <div class="project-container">
+                            <a href="https://image-slider-film-photos.netlify.app/" target="_blank">
+                                <h3>Image slider</h3>
+                                <img src="assets/images/image-slider.png" alt="image-slider" class="project-img">
+                            </a>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
